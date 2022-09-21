@@ -21,6 +21,7 @@ def make_pi():
     #returns first 3 digits of pi
     return [3,1,4]
 
+print(make_pi()) #[3, 1, 4]
 
 #common_end
 def common_end(a, b):
@@ -56,11 +57,19 @@ def reverse3(nums):
     res = [nums[2], nums[1], nums[0]]
     return res
 
+print(reverse3([1, 2, 3])) #[3, 2, 1]
+print(reverse3([5, 11, 9])) #[9, 11, 5]
+print(reverse3([7, 0, 0])) #[0, 0, 7]
+
 #max_end3
 def max_end3(nums):
     #function figures out the bigger number of the first and last elements of the array, and transforms the 3-element list to consist only of that bigger number
     big = max(nums[0], nums[2])
     return [big, big, big]
+
+print(max_end3([1, 2, 3])) #[3, 3, 3]
+print(max_end3([11, 5, 9])) #[11, 11, 11]
+print(max_end3([2, 11, 3])) #[3, 3, 3]
 
 #sum2
 def sum2(nums):
@@ -71,17 +80,33 @@ def sum2(nums):
         return nums[0]
     return nums[0] + nums[1]
 
+print(sum2([1, 2, 3])) #3
+print(sum2([1, 1])) #2
+print(sum2([1, 1, 1, 1])) #2
+
 #middle_way
 def middle_way(a, b):
     #function returns a new list of length 2, consisting of the middle elements of lists a and b, each of length 3
     return [a[1], b[1]]
+
+print(middle_way([1, 2, 3], [4, 5, 6])) #[2, 5]
+print(middle_way([7, 7, 7], [3, 8, 0])) #[7, 8]
+print(middle_way([5, 2, 9], [1, 4, 5])) #[2, 4]
 
 #make_ends
 def make_ends(nums):
     #function returns a new list of length 2, consisting of the first and last elements of original list which will always be length 1 or more
     return [nums[0], nums[-1]]
 
+print(make_ends([1, 2, 3])) #[1, 3]
+print(make_ends([1, 2, 3, 4])) #[1, 4]
+print(make_ends([7, 4, 6, 2])) #[7, 2]
+
 #has23
 def has23(nums):
     #function returns true if list of length 2 contains either a 2 or a 3, false otherwise
     return (nums[0] == 2 or nums[1] == 2 or nums[0] == 3 or nums[1] == 3)
+
+print(has23([2, 5])) #True
+print(has23([4, 3])) #True
+print(has23([4, 5])) #False
