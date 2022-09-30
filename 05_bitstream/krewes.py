@@ -4,9 +4,6 @@
 # 2022-09-29
 # time spent: 1.0
 
-# DISCO: 
-# QCC:
-# OPS SUMMARY: We first used split to split up each tuple into a variable called info. Then, we used a for loop to loop through each tuple and separate each element.
 import random as rand
 krewes = "2$$$A$$$B@@@7$$$C$$$D@@@8$$$E$$$F@@@2$$$G$$$H"
 
