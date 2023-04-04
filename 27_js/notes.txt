@@ -1,22 +1,20 @@
-Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
-SoftDev pd0
+Team AA :: Anna Fang, Aleksandra Shifrina
+SoftDev pd7 
 K27 -- Basic functions in JavaScript
-2023-04-03t
+2023-04-04f
 
 DISCO
 -----------------------------------------------------------------
-* Ooooh, ___
-* Aaah-haa!  ____
-* ...
+*  You don't necessarily have to use the lambda structure! 
+*  Scheme allows loops and func. work to be reduced 
+* JS uses "node" to compile and "console.log" for func/print calls
+* Ctrt+Shift/Option+J will allow you to run JS in the browser! 
 =================================================================
 
 QCC
 -----------------------------------------------------------------
-* Why...?
-* Huh?
-* Teh whah now?
-* ...
+* (Question we had during class) How do we run scheme documents directly in our terminals?
+*  What is the benefit of using scheme over other programming languages? Over JS? 
 =================================================================
-
 
 
