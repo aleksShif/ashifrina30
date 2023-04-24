@@ -1,0 +1,14 @@
+Team Double A V2 :: Sasha Shifrina, Anna Fang
+SoftDev pd7
+ K30 -- canvas based JS drawing
+ 2023-04-24m
+--------------------------------------------------
+
+Notes
+-  implementation of e indicates a "click" event 
+-  additional moveTo calls are not necessary 
+- [(event, listener)]
+- 2d = two dimensional rendering
+
+Questions 
+- N/A

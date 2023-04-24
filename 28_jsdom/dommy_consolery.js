@@ -15,13 +15,13 @@ var j = 20;
 //assign an anonymous fxn to a var
 var f = function(x) {
   var j=30;
-  return j+x; // returns 30 + the input to function() 
+  return j+x; // returns 30 + the input to function()
 };
 
 
 //instantiate an object
 var o = { 'name' : 'Thluffy',
-          age : 1024, // no quotes 
+          age : 1024, // no quotes
           items : [10, 20, 30, 40],
           morestuff : {a : 1, b : 'ayo'},
           func : function(x) {
@@ -43,7 +43,7 @@ var removeItem = function(n) {
   listitems[n].remove();
 };
 
-// makes the end caps red 
+// makes the end caps red
 var red = function() {
   var items = document.getElementsByTagName("li");
   for(var i = 0; i < items.length; i++) {
@@ -51,7 +51,7 @@ var red = function() {
   }
 };
 
-// adding alternating "red" and "blue" endcaps 
+// adding alternating "red" and "blue" endcaps
 var stripe = function() {
   var items = document.getElementsByTagName("li");
   for(var i = 0; i < items.length; i++) {
@@ -98,7 +98,7 @@ function gcd(x, y){
     y = x % y;
     x = temp;
   }
-  return x; 
+  return x;
 }
 
 // console.log(gcd(3, 9));
@@ -107,7 +107,7 @@ function gcd(x, y){
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
 //  Note anything notable.
-const myFxn = (param1, param2) => { // "shorter functions"; cannot be used as methods or constructors 
+const myFxn = (param1, param2) => { // "shorter functions"; cannot be used as methods or constructors
   // body
   return retVal;
 };
@@ -115,10 +115,11 @@ const myFxn = (param1, param2) => { // "shorter functions"; cannot be used as me
 // console.log(myFxn);
 
 // rendering the function outputs using this information: https://www.w3schools.com/jsref/prop_html_innerhtml.asp
- var a = "" + gcd(3,6); 
- var c = "" + fib(9); 
- var b = "" + fact(9); 
+ var a = "" + gcd(3,6);
+ var c = "" + fib(9);
+ var b = "" + fact(9);
+ var d = "" + fib(12);
+document.getElementById("FIB12").innerHTML = "fib(12) = " + d; 
 document.getElementById("GCD").innerHTML = "gcd(3,6) = " + a;
 document.getElementById("FIB").innerHTML = "fib(9) = " + c;
-document.getElementById("FACT").innerHTML = "fact(9) = " + b; 
-
+document.getElementById("FACT").innerHTML = "fact(9) = " + b;

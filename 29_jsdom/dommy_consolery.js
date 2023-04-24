@@ -1,7 +1,7 @@
 // Team Double A V2 :: Sasha Shifrina, Anna Fang
 // SoftDev pd7
-// K28 -- Getting more comfortable with the dev console and the DOM
-// 2023-04-16
+// K29 -- DOMfoolery++
+// 2023-04-20
 // --------------------------------------------------
 
 //send diagnostic output to console
@@ -85,7 +85,7 @@ function fib(n){
     }
 }
 
-myButton.addEventListener('click', function(event) {
+myButton.addEventListener('click', function(event) { // adjusting the functions to avoid repition 
   const myInputValue = myInput.value;
 
   content.innerHTML = fib(myInputValue);
@@ -146,12 +146,13 @@ const myFxn = (param1, param2) => { // "shorter functions"; cannot be used as me
 // console.log(myFxn);
 
 // rendering the function outputs using this information: https://www.w3schools.com/jsref/prop_html_innerhtml.asp
- var a = "" + gcd(3,6);
+// old calls for k28
+// var a = "" + gcd(3,6);
  //var c = "" + fib(9);
  // var b = "" + fact(9);
  //var d = "" + fib(12);
  // var e = "" + fact(12);
  // var f = "" + gcd(12,4);
-document.getElementById("GCD").innerHTML = "gcd(3,6) = " + a;
-document.getElementById("FIB").innerHTML = "fib(9) = " + c;
-document.getElementById("FACT").innerHTML = "fact(9) = " + b;
+// document.getElementById("GCD").innerHTML = "gcd(3,6) = " + a;
+// document.getElementById("FIB").innerHTML = "fib(9) = " + c;
+// document.getElementById("FACT").innerHTML = "fact(9) = " + b;
