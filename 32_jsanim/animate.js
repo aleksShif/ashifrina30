@@ -45,8 +45,8 @@ var dvdLogoSetup = function() {
   var rectWidth = 100;
   var rectHeight = 50;
 
-  var rectX = 0;
-  var rectY = 0;
+  var rectX = Math.random() * (playground.width - rectWidth);
+  var rectY = Math.random() * (playground.height - rectHeight);
 
   var xVel = 1;
   var yVel = 1;
@@ -54,7 +54,6 @@ var dvdLogoSetup = function() {
   var logo = new Image();
   logo.src = "logo_dvd.jpg";
 
-  ctx.drawImage(logo, rectX, rectY, rectWidth, rectHeight);
   var dvdLogo = function() {
     ctx.clearRect(0, 0, c.width, c.height);
     ctx.drawImage(logo, rectX, rectY, rectWidth, rectHeight);
